@@ -32,6 +32,7 @@
 
 
 
+// arrr()
 
 
    // function loginuser(username){
@@ -54,11 +55,39 @@ function calculate(...num1){
 
 
 
-const arrr ={
-   name:"xkk",
-   email:"nbfhjkdbzv"
-}
-function handelobject(anyobject) {
-   console.log(`username is ${anyobject.name} and name is ${anyobject.email}`);
+function calculateprise(num1){
+   return num1
 }
 
+// console.log(calculateprise(2));
+
+//spread/rest operator 
+
+
+function calculateprise(...num1){
+   return num1
+}
+
+// console.log(calculateprise(200,300,4000,400000));
+
+
+const user={
+   username:"shuhbbh",
+   price:199
+}
+function handleobject(anyobject){
+   console.log(`username is ${anyobject.username} and price is${anyobject.price}`);
+}
+
+
+handleobject(user)
+
+const abc=[200,300,400,500]
+
+
+
+function returnsecondvalue(getarray){
+   return getarray[3]
+}
+
+console.log(returnsecondvalue(abc));
